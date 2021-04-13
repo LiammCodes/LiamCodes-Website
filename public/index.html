@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="tailwind.css" rel="stylesheet">
+    <title>LiamCodes - Home</title>
+    <script src="https://kit.fontawesome.com/6c9c1ab4c5.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-gray-800 flex flex-col">
+    <div class="flex flex-col min-h-screen">
+      <!-- NAVBAR -->
+      <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-16">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!--Mobile menu button -->
+              <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                
+                <!-- When menu IS open -->
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="flex-shrink-0 flex items-center">
+                <a href="./index.html">
+                  <img class="block lg:hidden h-8 w-auto" src="./assets/liamcodesicon.png" alt="LiamCodes Logo" />
+                </a>
+                <a href="./index.html">
+                  <img class="hidden lg:block h-8 w-auto" src="./assets/liamcodes3.png" alt="LiamCodes Logo" />
+                </a>
+              </div>
+              <div class="hidden sm:block sm:ml-6">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="./index.html" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+      
+                  <a href="./about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+      
+                  <a href="./projects.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+      
+                  <a href="./contact.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <a href="./files/test.txt" download="resume.txt">
+                <button type="submit" class="px-4 py-1 text-sm text-white font-semibold rounded-full border border-white hover:text-white bg-gradient-to-br hover:from-pink-600 hover:to-red-500 hover:border-transparent focus:outline-none">
+                  <em class="fas fa-download pr-2"></em>
+                  Resume
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="./index.html" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+
+            <a href="./about.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+
+            <a href="./projects.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+
+            <a href="./contact.php" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- MAIN SECTION -->
+      <main class="max-w-7xl mx-auto flex-grow">
+        <div class="grid-flow-col lg:grid lg:grid-cols-2 lg:gap-4 lg:px-20 lg:pt-20 md:pt-10 md:px-20 px-8">
+          <div class="col-auto mt-10">
+            <h2 class="text-white text-5xl font-semibold text-left pb-1">
+              Need something new?
+            </h2>
+            <h2 class="text-white text-4xl font-semibold text-left">
+              I can help!
+            </h2>
+            <p class="text-md text-left pt-4 text-gray-300">
+              My name is Liam and I'm a freelance software developer and student. I'm always looking for work so get in touch if you need work done!
+            </p>
+            <p class="text-md text-left pt-4 text-gray-300">
+              Feel free to take a look at the rest of the site and checkout the pojects I'm working on!
+            </p>
+            <div class="container py-8 text-left space-x-4">
+              <button onclick="window.location.href='./contact.php'" class="px-4 py-1 text-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 shadow-md hover:shadow-lg text-white font-semibold rounded-full border bg-gradient-to-br from-pink-600 to-red-500 border-transparent focus:outline-none">Hire Me!</button>
+              <button onclick="window.location.href='./about.html'" class="px-4 py-1 text-lg text-white font-semibold rounded-full border border-white hover:bg-white hover:text-gray-800 hover:border-transparent focus:outline-none">Learn More<em class="fas fa-arrow-right pl-2"></em></button>
+            </div>
+            
+          </div>
+          <div class="hidden sm:block col-auto mx-auto justify-center md:w-1/2 lg:w-full h-auto">
+            <img src="./assets/iMac.png" alt="Software Developer Illustration" />
+          </div>
+        </div>
+      </main>
+      <img class="w-full -mb-3 h-auto hidden sm:block" src="./assets/waves.svg" alt="Waves" />
+      <img class="w-full -mb-3 h-auto sm:hidden" src="./assets/waves-mobile.svg" alt="Waves" />
+    </div>
+  </body>
+  <!-- FOOTER -->
+  <footer class="text-gray-700 bg-pink-700 body-font">
+    <div class="container flex flex-col items-center px-8 py-8 mx-auto max-w-6xl sm:flex-row mt-10">
+      <a href="./index.html" class="text-xl font-bold leading-none text-gray-800 select-none logo">LiamCodes</a>
+      <p class="mt-4 text-sm text-gray-800 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-800 sm:mt-0">
+        © 2021 LiamCodes
+      </p>
+      <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
+        <a href="https://github.com/liammcodes" class="text-red-400 hover:text-pink-900 text-2xl" target=”_blank”>
+          <em class="fab fa-github"></em>
+        </a>
+
+        <a href="https://www.instagram.com/liam_codes/" class="text-red-400 hover:text-pink-900 text-2xl" target=”_blank”>
+          <em class="fab fa-instagram"></em>
+        </a>
+
+        <a href="https://www.twitch.tv/liama6" class="text-red-400 hover:text-pink-900 text-2xl" target=”_blank”>
+          <em class="fab fa-twitch"></em>
+        </a>
+
+        <a href="https://twitter.com/liammcodes" class="text-red-400 hover:text-pink-900 text-2xl" target=”_blank”>
+          <em class="fab fa-twitter"></em>
+        </a>
+      </span>
+    </div>
+  </footer>
+</html>
+
+<!-- Mobile Dropdown -->
+<script src="./scripts/mobile-menu.js"></script>
